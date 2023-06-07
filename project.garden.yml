@@ -1,0 +1,11 @@
+apiVersion: garden.io/v1
+kind: Project
+name: garden-wait
+environments:
+  - name: default
+    defaultNamespace: default
+providers:
+  - name: local-kubernetes
+    environments: [default]
+    namespace: ${environment.namespace}
+    setupIngressController: false

@@ -1,0 +1,14 @@
+apiVersion: batch/v1
+kind: Job
+metadata:
+  name: long
+spec:
+  template:
+    spec:
+      containers:
+        - name: test
+          image: debian
+          command:
+            - sleep
+            - "3600"
+      restartPolicy: OnFailure

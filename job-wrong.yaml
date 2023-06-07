@@ -1,0 +1,13 @@
+apiVersion: batch/v1
+kind: Job
+metadata:
+  name: wrong
+spec:
+  template:
+    spec:
+      containers:
+        - name: test
+          image: debian
+          command:
+            - wrong
+      restartPolicy: OnFailure
