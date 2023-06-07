@@ -1,16 +1,13 @@
 # See the documentation and reference for kubernetes modules at https://docs.garden.io/reference/module-types/kubernetes
 
-kind: Deploy
+kind: Module
 type: kubernetes
 name: job-long
-spec:
-  files:
-    - ./job-long.yaml
+files:
+  - ./job-long.yaml
 ---
-
-kind: Deploy
+kind: Module
 type: kubernetes
 name: job-wrong
-spec:
-  files:
-    - ./job-wrong.yaml
+files:
+  - ./job-wrong.yaml

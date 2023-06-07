@@ -1,4 +1,3 @@
-apiVersion: garden.io/v1
 kind: Project
 name: garden-wait
 environments:
